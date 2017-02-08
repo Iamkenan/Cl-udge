@@ -1,0 +1,63 @@
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+img{
+  width: 100%;
+  z-index: -999;
+}
+
+[class*='row']{
+  margin-bottom: 1em;
+}
+.rowthree{
+  position: relative;
+  border-radius: 10px;
+}
+
+
+.rowthree div{
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 1.5em;
+  left: 47.5%;
+  background-color: white;
+}
+
+.rowfour{
+  display: flex;
+  position: relative;
+}
+
+.rowfour div:first-child{
+  margin-right: 1.5em;
+}
+
+.overlay4{
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width:768px){
+  .container{
+    width: 100%;
+  }
+
+  .rowthree div{
+    display: none;
+  }
+
+  .rowfour{
+    flex-direction: column;
+  }
+  .rowfour div:first-child{
+    margin-right: 0;
+    margin-bottom: 1em;
+
+  }
+
+}
